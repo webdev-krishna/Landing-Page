@@ -1,0 +1,110 @@
+/*style.css*/
+*{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.header, .header-main,.navbar,
+.header-content, .header-left {
+    background-color: #1f2937;
+}
+
+.header {
+    /*present it is jst created, 
+    it has header-main as child,
+    it is used only to make its child center*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.header-main {
+    /*present it is jst created, 
+    it has navbar & header-content as children,
+    it is used to place header-content below navbar*/
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.navbar {
+    /*it is created to create navbar
+    it contains <li> and <a> tags*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.headerlogo {
+    color: #f9faf8;
+    font-size: 24px;  
+}
+
+.left-links {
+    display: flex;
+    flex: 1;
+}
+
+.headerlink{
+    color: #e5e7eb;
+    font-size: 18px;
+    
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    /*used display flex to make ul horizontal*/
+    display: flex;
+    gap:16px;
+    
+}
+a {
+    text-decoration: none;
+    
+}
+.header-content {
+    /*it is used to place its children horizontally*/
+    display: flex;
+    margin: 90px 0;
+    gap: 48px;
+    flex-shrink: 0;
+}
+.header-left {
+
+}
+
+span.hero-main {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+span.hero-secondary {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+button {
+    color: #f9faf8;
+    background-color: #3882f6;
+    border-radius: 10px;
+    border-style: solid #e5e7eb;
+    width: 100px;
+    height: 40px;
+}
+.header-right {
+    background-color: #5f6266;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    color: #e5e7eb;
+}
