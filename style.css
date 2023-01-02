@@ -9,7 +9,8 @@ body {
 }
 
 .header, .header-main,.navbar,
-.header-content, .header-left {
+.header-content, .header-left,
+.footer {
     background-color: #1f2937;
 }
 
@@ -26,17 +27,15 @@ body {
 .header-main {
     /*present it is jst created, 
     it has navbar & header-content as children,
-    it is used to place header-content below navbar*/
-    display: flex;
-    flex-direction: column;
+    it is used to place header-content below navbar
+    but they were automatically placed one below other*/
     flex-shrink: 0;
 }
 
 .navbar {
     /*it is created to create navbar
-    it contains <li> and <a> tags*/
-    margin: 0;
-    padding: 0;
+    it contains <li> and <a> tags
+    used display to flex the left and right links*/
     display: flex;
 
 }
@@ -60,13 +59,13 @@ body {
 ul{
     list-style: none;
     padding: 0;
-    /*used display flex to make ul horizontal*/
+    /*used display flex to make ul horizontal in right-links*/
     display: flex;
-    gap:16px;
+    gap:16px;/*to seperate the items in <ul>*/
     
 }
 a {
-    text-decoration: none;
+    text-decoration: none;/*to remove underlines in <a>*/
     
 }
 .header-content {
@@ -95,7 +94,7 @@ button {
     color: #f9faf8;
     background-color: #3882f6;
     border-radius: 10px;
-    border-style: solid #e5e7eb;
+    border-style: 2px solid #e5e7eb;
     width: 100px;
     height: 40px;
 }
@@ -107,4 +106,16 @@ button {
     align-items: center;
     width: 600px;
     color: #e5e7eb;
+}
+.footer {
+    /*present it is jst created, 
+    it has header-main as child,
+    it is used only to make its child center*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+    color: #e5e7eb;
+    font-size: 18px;
+
 }
