@@ -150,7 +150,13 @@ button {
     color: #1f2937;
 }
 .quote-author {
-    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 800px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
 }
 
 /*sign up section*/
@@ -159,7 +165,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 80px 0;
 }
 .sign-up-content {
     background-color: #3882f6;
