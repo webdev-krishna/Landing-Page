@@ -6,6 +6,7 @@ body {
     margin: 0;
 }
 
+                    /*header-section*/
 .header, .header-main, .header-content
 .header-left, .header-right, .navbar,
 .footer {
@@ -84,8 +85,38 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: 600px;
 }
+
+/*sign up section*/
+.sign-up-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-content {
+    background-color: #3882f6;
+    display: flex;
+    padding: 20px 300px;
+    font-size: 18px;
+    gap: 48px;
+   
+}
+.sign-up-left {
+
+}
+.sign-up-main {
+
+}
+.sign-up-secondary {
+
+}
+.sign-up-right {
+
+}
+
+/*footer-section*/
 .footer {
     color: #e5e7eb;
     display: flex;
@@ -93,6 +124,4 @@ button {
     align-items: center;
     justify-content: center;
     height: 100px;
-    
-
 }
